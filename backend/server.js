@@ -26,6 +26,7 @@ app.get("/api/status", (req, res) => {
 });
 
 // Auth routes
+app.use("/api/tasks", require("./routes/taskRoutes"));
 app.use("/api/auth", require("./routes/authRoutes"));
 
 // Start server
